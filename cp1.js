@@ -1,12 +1,12 @@
 var app = angular.module('app', ['ui.bootstrap']);
 
 app.controller("mainController", ["$scope", function($scope) {
-    var maxMarkovNumber = 20;
+    var maxMarkovNumber = 10;
     var maxNumCharToGenerate = 10000;
     $scope.source = "";
     $scope.generateTextClicked = false;
     $scope.generatedText = undefined;
-    $scope.markovNumber = 10;
+    $scope.markovNumber = 4;
     $scope.markovNumbers = [];
     for (var i = 1; i <= maxMarkovNumber; i++) {
         $scope.markovNumbers.push(i);
